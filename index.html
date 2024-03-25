@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список патентов</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, nav, main, footer {
+    text-align: center;
+    margin: 20px;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: blue;
+}
+
+.patents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.patent-item {
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 20px;
+    width: 100%;
+}
+
+.main-header {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.main-header .logo {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.main-nav ul li {
+    margin-left: 20px;
+}
+
+.main-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+    color: #1e7e34;
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+
+    .main-nav ul {
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .main-nav ul li {
+        margin: 0 10px; /* Сделайте интервалы меньше на мобильных устройствах */
+    }
+}
+
+    </style>
+</head>
+<body>
+<header class="main-header">
+    <div class="header-content">
+        <h1 class="logo">Патентный Портал: </h1>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="patents.html">Патенты</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <main>
+        <div class="search-container">
+    <input type="text" id="searchBox" onkeyup="searchPatents()" placeholder="Поиск по патентам...">
+</div>
+        <section>
+            <h2>Список патентов по теме оптические приборы, похожие на запрос "очки с дворниками":</h2>
+            <div class="patents">
+                <!-- Повторите этот блок для каждого патента -->
+                <div class="patent-item">
+                    <h3>Оптический анализатор для биомедицинских исследований</h3>
+                    <p><strong>Номер:</strong> US, 1573</p>
+                    <p><strong>Классификация:</strong> G02B 7/00, G01N 21/64</p>
+                    <p><strong>Владелец:</strong> XYZ Corporation (US)</p>
+                    <p><strong>Дата заявки:</strong> 20231015</p>
+                    <p><strong>Дата публикации:</strong> 15.03.2023</p>
+                </div>
+                <!-- Конец блока патента -->
+                <!-- Добавьте другие патенты аналогичным образом -->
+			            <div class="patents">
+                <!-- Повторите этот блок для каждого патента -->
+                <div class="patent-item">
+                    <h3>Инновационные очки с улучшенной оптической системой</h3>
+                    <p><strong>Номер:</strong> US, 315439</p>
+                    <p><strong>Классификация:</strong> G017B 9/00, G02B 9/08</p>
+                    <p><strong>Владелец:</strong> Clear Vision Inc. </p>
+                    <p><strong>Дата заявки:</strong> 20240102</p>
+                    <p><strong>Дата публикации:</strong> 15.05.2020</p>
+                </div>
+					</div>
+			            <div class="patent-item">
+							<h3>Инновационная оптическая линза для фотоаппаратов</h3>
+							<p><strong>Номер:</strong> US, 412353</p>
+							<p><strong>Классификация:</strong> B14C 1/00, G02B 1/04</p>
+							<p><strong>Владелец:</strong> Optix Innovations Ltd (UK)</p>
+							<p><strong>Дата заявки:</strong> 20201120</p>
+							<p><strong>Дата публикации:</strong> 10.08.2018</p>
+						</div>
+                <div class="patent-item">
+                    <h3>Микроскоп с улучшенной оптической системой</h3>
+                    <p><strong>Номер:</strong> РБ, 651324</p>
+                    <p><strong>Классификация:</strong> A12C 17/00, G02B 17/08</p>
+                    <p><strong>Владелец:</strong> ОАО "Оптические наработки" (BY)</p>
+                    <p><strong>Дата заявки:</strong> 20211210</p>
+                    <p><strong>Дата публикации:</strong> 15.04.2020</p>
+                </div>
+
+                <div class="patent-item">
+                    <h3>Оптическая система для телескопов</h3>
+                    <p><strong>Номер:</strong> US, 61234</p>
+                    <p><strong>Классификация:</strong> C17E 13/00, G02B 13/18</p>
+                    <p><strong>Владелец:</strong> Optical Innovations LLC (US)</p>
+                    <p><strong>Дата заявки:</strong> 20221005</p>
+                    <p><strong>Дата публикации:</strong> 25.07.2022</p>
+                </div>
+
+                <div class="patent-item">
+                    <h3>Инновационная оптическая линза для фотоаппаратов</h3>
+                    <p><strong>Номер:</strong> РФ, 123894</p>
+                    <p><strong>Классификация:</strong> H14E 1/00, G02B 1/04</p>
+                    <p><strong>Владелец:</strong> ООО "Оптический гений" (RU)</p>
+                    <p><strong>Дата заявки:</strong> 20201120</p>
+                    <p><strong>Дата публикации:</strong> 10.08.2021</p>
+                </div>
+
+                <div class="patent-item">
+                    <h3>Оптический фильтр для спектрального анализа</h3>
+                    <p><strong>Номер:</strong> РБ, 1929843</p>
+                    <p><strong>Классификация:</strong> G02B 19/00, G02B 19/24</p>
+                    <p><strong>Владелец:</strong> ООО "Оптическая динамика" (BY)</p>
+                    <p><strong>Дата заявки:</strong> 20230715</p>
+                    <p><strong>Дата публикации:</strong> 30.12.2023</p>
+                </div>
+
+                <div class="patent-item">
+                    <h3>Инновационные очки с улучшенной оптической системой</h3>
+                    <p><strong>Номер:</strong> US, 1029744</p>
+                    <p><strong>Классификация:</strong> G02B 9/00, G02B 9/08</p>
+                    <p><strong>Владелец:</strong> Clear Inc. (US)</p>
+                    <p><strong>Дата заявки:</strong>
+                20240102</p>
+                    <p><strong>Дата публикации:</strong> 15.05.2024</p>
+                </div>
+
+                <div class="patent-item">
+                    <h3>A kind of glasses of automatic erasing</h3>
+                    <p><strong>Номер:</strong> US, 12847142</p>
+                    <p><strong>Классификация:</strong> G02C11/08</p>
+                    <p><strong>Владелец:</strong> GUANGZHOU DEXIN SPORT GOODS Co., Ltd. (US)</p>
+                    <p><strong>Дата заявки:</strong> 20240102</p>
+                    <p><strong>Дата публикации:</strong> 15.05.2017</p>
+                </div>
+
+                <div class="patent-item">
+                    <h3>Method for producing coated anti-fingerprint type chemically strengthened glass substrate and glass substrate produced thereby</h3>
+                    <p><strong>Номер:</strong> US, 8128737</p>
+                    <p><strong>Классификация:</strong> C03C17/42</p>
+                    <p><strong>Владельцы:</strong> Marta Krzyzak, Dirk Apitz, Jochen Alkempe (US)</p>
+                    <p><strong>Дата заявки:</strong> 20211210</p>
+                    <p><strong>Дата публикации:</strong> 15.04.2016</p>
+                </div>
+
+                <div class="patent-item">
+                    <h3>Sensor module and protective glass</h3>
+                    <p><strong>Номер:</strong> US, 17271342</p>
+                    <p><strong>Классификация:</strong> G01D11/26</p>
+                    <p><strong>Владелец:</strong> Shusaku AKIBA (US)</p>
+                    <p><strong>Дата заявки:</strong> 20211210</p>
+                    <p><strong>Дата публикации:</strong> 15.04.2015</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Патентный портал. Все права защищены.</p>
+    </footer>
+</body>
+</html>
